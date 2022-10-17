@@ -1,0 +1,58 @@
+.Contact{
+height: 75vh;
+width: 100%;
+background-color: #c6c4c3;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+table{
+width: 600px;
+height: 50vh;
+}
+.title{
+    margin: 0;
+    padding: 0;
+    padding-top: 35px;
+}
+table tr{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+table td{
+    font-family: 'Italiana', serif;
+    font-size: 24px;
+    
+}
+button{
+    width: 140px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #c6c4c3;
+}
+.img{
+    height: 25px;
+    padding: 5px 0;
+}
+input{
+    width: 550px;
+    height: 40px;
+}
+
+@media screen and (max-width: 767px){
+    input{
+        width: 450px;
+        height: 30px;
+    }
+    table tr{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin: 20px;
+    }
+}

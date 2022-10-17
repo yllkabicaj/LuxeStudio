@@ -1,0 +1,103 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.headertext{
+    height: 85vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.headertext h1{
+    color: white;
+    font-size: 120px;
+    font-family: 'Italiana', serif;
+}
+.headertext h2{
+    color: white;
+    font-size: 30px;
+    font-family: 'Italiana', serif;
+}
+.img1{
+    z-index: 2;
+    position: absolute;
+    height: 350px;
+    width: 258px;
+    background-image: url("../../../images/warion-taipei-8QIAj5tHDdc-unsplash.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 5px solid white;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    right: 80px;
+    bottom: 190px;
+}
+.img2{
+    z-index: 5;
+    position: absolute;
+    height: 450px;
+    width: 358px;
+    background-image: url("../../../images/milada-vigerova-f9QOqBePckk-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid white;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    right: 300px;
+    bottom: 40px;
+}
+.ura{
+    z-index: 0;
+    position: absolute;
+    height: 550px;
+    width: 458px;
+    border: 5px solid white;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    right: 140px;
+    bottom: 30px;
+}
+.arrow{
+    position: absolute;
+    bottom: 10%;
+    right: 47%;
+    color: white;
+    width: 80px;
+    animation: MoveUpDown 3s linear infinite;
+}
+@media screen and (max-width: 767px){
+ .header{
+    justify-content: center;
+ }   
+ .headertext{
+    width: 100%;
+    align-items: center;
+ }
+ .headertext h1{
+    text-align: center;
+ }
+ .img1{
+    right: 50px;
+    bottom: -390px;
+ }
+ .img2{
+    bottom: -740px;
+    right: 55px;
+ }
+ .ura{
+    bottom: -500px;
+    right: 8px;
+ }
+}
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 50px;
+    }
+  }

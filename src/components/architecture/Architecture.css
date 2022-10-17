@@ -1,0 +1,79 @@
+.arch{
+    width: 100%;
+    height: 170vh;
+    background-color: #8c8885;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.arch h1{
+    font-size: 50px;
+    font-family: 'Italiana', serif;
+    padding: 40px;
+    padding-bottom: 40px;
+    color: rgb(228, 221, 221);
+}
+.arch h3{
+    font-size: 25px;
+    font-family: 'Italiana', serif;
+    color: rgb(228, 221, 221);
+}
+.alignImages{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.image1{
+    width: 50%;
+    height: 90%;
+    background-image: url("../../images/jason-wang-NxAwryAbtIw-unsplash.jpg");
+    background-size: cover;
+}
+.image2{
+    width: 50%;
+    height: 90%;
+    background-image: url("../../images/minimalism-modern-interior-scandinavian-design-bright-studio-living-room-cozy-design-panoramic-windows-large-modular-sofa-large-wooden-lamp-tv-green-plants-3d-rendering-3d-illustration_370638-93.jpg");
+    background-size: cover;
+}
+.image3{
+    width: 50%;
+    height: 90%;
+    background-image: url("../../images/classic-interior-with-blue-armchairs-floor-lamp_154979-1175.jpg");
+    background-size: cover;
+}
+.image4{
+    width: 50%;
+    height: 90%;
+    background-image: url("../../images/kitchen-interior-design-with-wooden-table.jpg");
+    background-size: cover;
+}
+@media screen and (max-width: 767px){
+    .arch h1{
+        text-align: center;
+    }
+    .arch{
+        height: 250vh;
+    }
+    .alignImages{
+        flex-direction: column;
+    }
+    .image1{
+        width: 100%;
+    }
+    .image2{
+        width: 100%;
+    }
+    .image3{
+        width: 100%;
+    }
+    .image4{
+        width: 100%;
+    }
+    .arch h3{
+    text-align: center;
+    padding: 5px 10px;
+    }
+}
