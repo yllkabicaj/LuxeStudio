@@ -8,7 +8,6 @@ const Architecture = ()=>{
     const [display3, setDisplay3] = useState('none');
     const [display4, setDisplay4] = useState('none');
 
-    
     const DisplayFlexHandler1 =()=>{
         setDisplay1("flex");
     }
